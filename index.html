@@ -1,0 +1,405 @@
+
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FASTFOOD Delivery</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cart.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <div class="logo">
+            FAST<span>FOOD</span>
+        </div>
+
+        <div class="header-actions">
+
+            <button class="icon-button" id="favoriteButton">
+                ♡
+            </button>
+
+            <button class="icon-button" id="cartButton">
+                🛒 <span id="cartCount">0</span>
+            </button>
+
+            <button class="settings-button" id="settingsButton">
+                ⚙ Settings
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!--HOME PAGE CONTENT-->
+    <main id="homePage">
+
+    <!-- LOCATION -->
+    <section class="location-section">
+
+        <div>
+            <p class="small-text">DELIVERY</p>
+
+            <button class="location-button" id="deliverySelector">
+                 บ้านของฉัน
+                <span>⌄</span>
+            </button>
+        </div>
+
+    </section>
+
+
+    <!-- SEARCH -->
+    <section class="search-section">
+
+        <div class="search-box">
+
+            <span>⌕</span>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="ค้นหาอาหาร ร้านอาหาร หรือเครื่องดื่ม..."
+            >
+
+            <button id="searchButton">
+                Search
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!--ADVERTISEMENT SLIDER-->
+    <section class="advertisement-section">
+
+        <div class="slider-container">
+
+            <div class="slide active">
+                <img src="Fastfood Feast_ Burgers, Drinks & Pizza-2.png" alt="1">
+            </div>
+
+            <div class="slide">
+                <img src="FastFood Promotional Banner Collection-1.png" alt="2">
+            </div>
+
+            <div class="slide">
+                <img src="Fastfood Special Offer Banner.png" alt="3">
+            </div>
+
+
+            <!--SLIDER DOTS-->
+            <div class="slider-dots">
+                <button class="dot active" data-index="0"></button>
+                <button class="dot" data-index="1"></button>
+                <button class="dot" data-index="2"></button>
+            </div>
+
+        </div>
+
+    </section>
+
+    
+<!-- DELIVERY METHOD -->
+<section class="delivery-method">
+
+    <!-- DELIVERY HEADING -->
+    <div class="delivery-heading">
+        <h2>เลือกวิธีรับอาหาร</h2>
+        <p>คุณต้องการรับอาหารด้วยวิธีไหน?</p>
+    </div>
+
+    <!-- DELIVERY OPTIONS -->
+    <div class="delivery-options">
+
+        <!-- HOME DELIVERY -->
+        <div class="delivery-card">
+            <div class="delivery-icon">🏠</div>
+
+            <div class="delivery-info">
+                <h3>จัดส่งที่บ้าน</h3>
+                <p>ให้ไรเดอร์ไปส่งถึงหน้าบ้านคุณ</p>
+            </div>
+        </div>
+
+        <!-- PICKUP -->
+        <div class="delivery-card">
+            <div class="delivery-icon">🏪</div>
+
+            <div class="delivery-info">
+                <h3>รับอาหารที่ร้าน</h3>
+                <p>ไปรับอาหารด้วยตัวเอง</p>
+            </div>
+        </div>
+
+        <!-- DINE IN -->
+        <div class="delivery-card">
+            <div class="delivery-icon">🍽️</div>
+
+            <div class="delivery-info">
+                <h3>รับประทานที่ร้าน</h3>
+                <p>นั่งทานอาหารที่ร้าน</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- CONFIRM BUTTON -->
+    <button class="confirm-button">
+        ยืนยันการเลือก
+    </button>
+
+</section>
+
+
+    <!-- CATEGORIES -->
+    <section class="category-section">
+
+        <div class="section-heading">
+
+            <div>
+                <p class="small-text">DISCOVER FOODLY</p>
+                <h2>Explore Categories</h2>
+            </div>
+
+        </div>
+
+        <div class="category-list">
+
+            <button class="category-item" data-category="food">
+                <img src="#" alt="อาหาร">
+                <p>อาหาร</p>
+            </button>
+
+            <button class="category-item" data-category="drink">
+                <img src="#" alt="เครื่องดื่ม">
+                <p>เครื่องดื่ม</p>
+            </button>
+
+            <button class="category-item" data-category="dessert">
+                <img src="#" alt="ของหวาน">
+                <p>ของหวาน</p>
+            </button>
+
+            <button class="category-item" data-category="coffee">
+                <img src="#" alt="กาเเฟ">
+                <p>กาแฟ</p>
+            </button>
+
+            <button class="category-item" data-category="nearby">
+                <img src="#" alt="ร้านใกล้ฉัน">
+                <p>ร้านใกล้ฉัน</p>
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!--PROMOTION-->
+    <section class="promotion-section">
+        <div class="section-heading">
+        <h2>Special Offer</h2>
+        <p>โปรโมชั่นสำหรับคุณ</p>
+        </div>
+
+        <div class="promotion-grid">
+
+            <div class="promotion-card green">
+                <p>NEW MEMBER</p>
+                <h2>20% OFF</h2>
+                <button>รับส่วนลด</button>
+            </div>
+
+            <div class="promotion-card orange">
+                <p>SPECIAL DEAL</p>
+                <h2>50% OFF</h2>
+                <button>รับส่วนลด</button>
+            </div>
+
+            <div class="promotion-card blue">
+                <p>DELIVERRY</p>
+                <h2>FREE DELIVERY</h2>
+                <button>ดูรายละเอียด</button>
+            </div>
+
+            <div class="promotion-card purple">
+                <p>DAILY DEAL</p>
+                <h2>HOT DEAL</h2>
+                <button>ดูโปรโมชั่น</button>
+            </div>
+
+        </div>
+
+    </section>
+
+    
+    
+    <!--RESTAURANT-->
+    <section class="restaurant-section">
+
+        <div class="section-heading">
+            <h2>Recommended Restaurants</h2>
+            <p>ร้านอาหารเเนะนำสำหรับคุณ</p>
+        </div>
+
+        <div class="restaurant-grid" id="restaurantContainer">
+            
+        </div>
+
+    </section>
+
+    <!--NEARBY RESTAURANTS-->
+    <section class="restaurant-section">
+
+        <div class="section-heading">
+            <h2>Nearby Restaurants</h2>
+            <p>ค้นพบร้านอาหารรอบตัวคุณ</p>
+        </div>
+
+        <div class="restaurant-grid" id="nearbyContainer">
+
+            <!--ร้านใกล้ฉัน-->
+        </div>
+
+    </section>
+
+    <!--POPPULAR FOOD-->
+    <section class="food-section">
+
+        <div class="section-heading">
+            <h2>Popular Food</h2>
+            <p>เมนูยอดนิยม</p>
+        </div>
+
+        <div class="food-grid" id="foodContainer">
+
+            <!--รายการอาหาร-->
+        </div>
+    </section>
+
+   <!--FOOTER-->
+   <footer class="footer">
+
+    <h2>FASTFOOD</h2>
+
+    <p>Your Food Your Choice</p>
+
+    <p>Food Ordering Platform</p>
+
+   </footer>
+
+   </main>
+
+
+   <!--CART SECTION-->
+   <section class="cart-section" id="cartSection" hidden>
+
+    <!--CART BACKGROUND OVERLAY-->
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <!--CLOSE CART BUTTON-->
+    <button class="close-cart" id="closeCart">
+        &times;
+    </button>
+
+    <!-- CART LAYOUT -->
+    <div class="cart-layout">
+
+    <!--LEFT SIDE-->
+    <div class="cart-left">
+
+        <!--CART ITEM-->
+        <div class="cart-item-card">
+
+            <div class="cart-heading">
+                <h2>🛒 ตะกร้าสินค้าของฉัน</h2>
+                <button id="backToHome">← กลับหน้าหลัก</button>
+            </div>
+
+            <h3>🍴 สินค้าของคุณ</h3>
+
+            <div id="cartItems"></div>
+
+        </div>
+
+        <!--DISCOUNT SLIDER-->
+        <div class="cart-discount-card">
+
+            <h2>🎁 เลือกโปรโมชั่นส่วนลด</h2>
+
+            <div class="discount-wrapper">
+
+                <button id="discountPrev">❮</button>
+
+                <div class="discount-slider" id="discountSlider">
+               </div>
+
+               <button id="discountNext">❯</button>
+
+            </div>
+
+        </div>
+
+        <!--RECOMMENDED PRODUCTS-->
+        <div class="cart-recommended-card">
+
+            <h2>🔥 สินค้าที่คุณอาจชอบ</h2>
+
+            <div id="recommendedProducts"></div>
+
+        </div>
+
+    </div>
+
+    <!--RIGHT SIDE-->
+    <aside class="cart-right">
+
+        <div class="cart-summary-card">
+
+            <h2>📋 สรุปคำสั่งซื้อ</h2>
+
+        <div class="summary-row">
+            <span>ยอดรวมสินค้า</span>
+            <span id="subtotal">0 บาท</span>
+        </div>
+
+        <div class="summary-row">
+            <span>ส่วนลดโปรโมชั่น</span>
+            <span id="discountAmount">0 บาท</span>
+        </div>
+
+        <div class="summary-row">
+            <span>ยอดชำระทั้งหมด</span>
+            <span id="totalPrice">0 บาท</span>
+        </div>
+
+        <button id="confirmOrder">
+             ✓ ยืนยันการสั่งซื้อ
+        </button>
+
+       </div>
+
+      </aside>
+
+     </div>
+
+    </section>
+    
+    <script src="script.js"></script>
+    <script src="cart.js"></script>
+
+   </body>
+   </html>
